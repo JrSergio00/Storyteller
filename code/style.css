@@ -11,30 +11,48 @@ body{
 nav{
     display: flex ;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    height: 100vh ;
+    max-width: 7em;
+    position: fixed;
+
+    background-color: #00101D;
+    border-right: 0.1em solid #FFFFFF;
+    padding: 0.5em;
 }
-ul{
+nav a{
+    text-align: center;
+    margin-top: 1em;
+}
+ul {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2em;
     gap: 4em;
 }
 
 article{
     background-color: #FFFFFF;
-    margin: 5em;
-    border-radius: 1em;
+    margin-left: 15em;
+    margin-right: 9em;
 }
 h1{
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-left: 8.7em;
 }
 article img{
     display: flex;
     margin: 5em auto;
 }
 p{
-    text-align: center;
+    text-align: justify;
     font-family: 'Poppins', sans-serif;
     margin-left: 10em;
     margin-right: 10em;
