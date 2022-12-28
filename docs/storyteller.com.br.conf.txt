@@ -1,0 +1,38 @@
+<VirtualHost *:80>
+
+    ServerName storyteller.com.br
+    ServerAlias www.storyteller.com.br storyteller.com.br
+
+    ServerAdmin franca.joao@escolar.ifrn.edu.br
+    DocumentRoot /var/www/html/storyteller.com.br
+
+    ErrorLog ${APACHE_LOG_DIR}/storyteller.com.br/error.log
+    CustomLog ${APACHE_LOG_DIR}/storyteller.com.br/access.log combined
+
+</VirtualHost>
+
+
+
+
+apt-get install apache2
+apt-get install default-mysql-server
+netstat -ntlpu (verificando qual o endereço e a porta)
+
+mysql -u root
+use mysql;
+create database storytellerdb;
+use storytellerdb
+
+create table cinefilo (
+	email VARCHAR(50) PRIMARY KEY NOT NULL,
+	nome VARCHAR (50) NOT NULL);
+
+create table filme (
+	nome VARCHAR(50) PRIMARY KEY NOT NULL,
+	genero VARCHAR(15) NOT NULL,
+	duracao TIME NOT NULL,
+	dt_lancamento DATE NOT NULL,
+ 	sinopse VARCHAR(MAX) NOT NULL,
+
+	CONSTRAINT FK_Filme_Cinefilo FOREIGN KEY (email)
+		REFERENCES storytellerdb.Cinefilo (email)
