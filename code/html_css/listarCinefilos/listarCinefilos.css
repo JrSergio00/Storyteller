@@ -15,24 +15,13 @@ body {
   background: linear-gradient(#052e47, #02192c, #010f19);
   height: 100vh;
 }
-
-nav {
+main{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  max-width: 7em;
-  position: fixed;
-  background-color: #00101d;
-  border-right: 0.1em solid #ffffff;
-  padding: 0.5em;
 }
-nav a {
-  text-align: center;
-  margin-top: 1em;
-}
-
-ul {
+ul.listcinefilos {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -48,7 +37,7 @@ h1 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 
 h2 {
@@ -57,8 +46,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-
-li {
+ul.listcinefilos li {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   text-align: center;
@@ -80,9 +68,6 @@ article {
   font-size: 1.5em;
   border: 0.1em solid #ffffff;
   border-radius: 15px;
-  margin-bottom: 2em;
-  margin-top: 3em;
-  margin-left: 3em;
   width: 15em;
   padding: 1em;
   display: block;
@@ -90,6 +75,5 @@ article {
   position: absolute;
   width: 432px;
   height: 73px;
-  left: 716px;
   top: 642px;
 }
