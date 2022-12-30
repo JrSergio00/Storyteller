@@ -1,0 +1,14 @@
+create table cinefilo (
+	email VARCHAR(50) PRIMARY KEY NOT NULL,
+	nome VARCHAR (50) NOT NULL);
+
+create table filme (
+	nome VARCHAR(50) PRIMARY KEY NOT NULL,
+	genero VARCHAR(15) NOT NULL,
+	duracao TIME NOT NULL,
+	dt_lancamento DATE NOT NULL,
+ 	sinopse VARCHAR(2000) NOT NULL,
+	email_cinefilo VARCHAR(50) NOT NULL,
+	FOREIGN KEY (email_cinefilo)
+	REFERENCES cinefilo(email)
+	);
