@@ -4,7 +4,6 @@ nav{
     flex-direction: column;
     height: 100vh;
     max-width: 7em;
-    margin-top: -10em;
     position: fixed;
     background-color: #00101D;
     border-right: 0.1em solid #FFFFFF;
