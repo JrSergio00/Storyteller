@@ -6,6 +6,7 @@ Projeto da matéria de Instalação e configuração de servidores do IFRN-CNAT.
 * [Protótipos Figma](https://www.figma.com/file/cRp3odKwzIzW4aqHZyQJCD/Storyteller?node-id=0%3A1&t=1O6GvpAgPHAtru1N-0)
 * [Diagrama Entidade Relacionamento](./docs/diagramaER.png)
 * [Modelo Relacional](./docs/modeloRelacional.png)
+* [Primeira entrega 30/12](https://www.youtube.com/watch?v=gDhJPP6JTYI)
 
 ### Equipe:
 
