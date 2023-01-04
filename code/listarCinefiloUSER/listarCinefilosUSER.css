@@ -58,22 +58,5 @@ article {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
 
-.button {
-  background: rgba(56, 56, 56, 0.15);
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Abel";
-  font-size: 1.5em;
-  border: 0.1em solid #ffffff;
-  border-radius: 15px;
-  width: 15em;
-  padding: 1em;
-  display: block;
-  text-align: center;
-  position: absolute;
-  width: 432px;
-  height: 73px;
-  top: 642px;
 }

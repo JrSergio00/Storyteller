@@ -1,4 +1,4 @@
-nav{
+nav#layout{
     display: flex ;
     justify-content: space-between;
     flex-direction: column;
@@ -9,11 +9,11 @@ nav{
     border-right: 0.1em solid #FFFFFF;
     padding: 0.5em;
 }
-nav a{
+nav#layout a{
     text-align: center;
     margin-top: 1em;
 }
-ul {
+ul#layout{
     list-style-type: none;
     display: flex;
     flex-direction: column;

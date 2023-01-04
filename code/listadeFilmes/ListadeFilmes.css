@@ -5,15 +5,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     background: linear-gradient(#052E47, #02192c, #010F19);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;   
+}
+main{
+    height: 100vh;
 }
 
-h1 { text-align: center;
+h1 { 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
     color:#FFFFFF;
-     text-decoration:underline;}
+    text-decoration:underline;}
 
 div { 
    background-color:  #d4d4d48f; 
@@ -27,13 +32,17 @@ div {
 }
 
 p {
- font-weight: bold ;
- padding-left: 40px;
- padding-right: 100px;
+    font-weight: bold ;
+    padding-left: 40px;
+    padding-right: 100px;
 }
 
-h2 { text-align: center;
-    font-size: 30px;} 
+h2 { 
+    text-align: center;
+    font-size: 30px;
+} 
 
-br { padding-top: 0px;
-     padding-bottom: 0px;}
+br { 
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
