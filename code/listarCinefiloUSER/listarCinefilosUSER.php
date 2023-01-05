@@ -20,18 +20,18 @@ if($sql->rowCount() > 0 ){
   </head>
 </html>
 <body>
-  <header>
-    <nav id="layout">
-        <a href="../index.html" class="logo"><img src="../imagens/logo (1).png" id="logo"></a>
-        <ul id="layout">
-            <li><a href="../index.html"><img src="../imagens/search.png"></a></li>
-            <li><a href="../index.html"><img src="../imagens/home.png"></a></li>
-            <li><a href="../listadeFilmes/ListadeFilmes.html"><img src="../imagens/movie.png" id="moovie"></a></li>
-            <li><a href="listarCinefilosUSER.html"><img src="../imagens/user 1.png"></a></li>
-        </ul>
-        <a href="../listarCinefilos/listarCinefilos.html"><img src="../imagens/admin.png" id="layout"></a>
-    </nav>
-  </header>
+<header>
+  <nav id="layout">
+      <a href="../index.html" class="logo"><img src="../imagens/logo (1).png" id="logo"></a>
+      <ul id="layout">
+          <li><a href="../index.html"><img src="../imagens/search.png"></a></li>
+          <li><a href="../index.html"><img src="../imagens/home.png"></a></li>
+          <li><a href="../listadeFilmes/ListadeFilmes.html"><img src="../imagens/movie.png" id="moovie"></a></li>
+          <li><a href="../listarCinefiloUSER/listarCinefilosUSER.php"><img src="../imagens/user 1.png"></a></li>
+      </ul>
+      <a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/admin.png" id="layout"></a>
+  </nav>
+</header>
 
   <main>
     <h1>Lista de cinéfilos do Storyteller</h1>
