@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require '../config.php';
 
 $lista = [];
 $sql = $pdo->query("SELECT * FROM cinefilo");
@@ -37,37 +37,25 @@ if($sql->rowCount() > 0 ){
     <h1>Lista de cinéfilos do Storyteller</h1>
 
     <article>
+
       <div>
         <h2>E-mail</h2>
         <ul class="listcinefilos">
-
           <?php foreach($lista as $usuario): ?>
             <li><?=$usuario['email'];?></li>
           <?php endforeach; ?>
-
-          <li>freddinho@gmail.com</li>
-          <li>xuazenegger@yahoo.com.br</li>
-          <li>vanDando@gmail.com</li>
-          <li>leuanSantana@gmail.com</li>
         </ul>
       </div>
 
       <div>
         <h2>Nome</h2>
         <ul class="listcinefilos">
-
           <?php foreach($lista as $usuario): ?>
             <li><?=$usuario['nome'];?></li>
           <?php endforeach; ?>
-
-          <li>Freddie Mercury</li>
-          <li>Arnold Schwarzenegger</li>
-          <li>Jean-Claude Van Damme</li>
-          <li>Léo Santana</li>
         </ul>
       </div>
-    </article>
 
+    </article>
   </main>
-  
 </body>

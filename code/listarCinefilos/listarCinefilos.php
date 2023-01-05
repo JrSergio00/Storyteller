@@ -1,3 +1,13 @@
+<?php
+require '../config.php';
+
+$lista = [];
+$sql = $pdo->query("SELECT * FROM cinefilo");
+if($sql->rowCount() > 0 ){
+  $lista = $sql->fetchALL(PDO::FETCH_ASSOC);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -27,25 +37,23 @@
     <h1>Lista de cinéfilos do Storyteller</h1>
 
     <article>
-      <div>
-        <h2>E-mail</h2>
-        <ul class="listcinefilos">
-          <li>freddinho@gmail.com</li>
-          <li>xuazenegger@yahoo.com.br</li>
-          <li>vanDando@gmail.com</li>
-          <li>leuanSantana@gmail.com</li>
-        </ul>
-      </div>
+        <div>
+          <h2>E-mail</h2>
+          <ul class="listcinefilos">
+            <?php foreach($lista as $usuario): ?>
+              <li><?=$usuario['email'];?></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>  
 
-      <div>
-        <h2>Nome</h2>
-        <ul class="listcinefilos">
-          <li>Freddie Mercury</li>
-          <li>Arnold Schwarzenegger</li>
-          <li>Jean-Claude Van Damme</li>
-          <li>Léo Santana</li>
-        </ul>
-      </div>
+        <div>
+          <h2>E-mail</h2>
+          <ul class="listcinefilos">
+            <?php foreach($lista as $usuario): ?>
+              <li><?=$usuario['email'];?></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
     </article>
 
     <a href="../adcinefolo/adcinefolo.html" class="button">Adicionar cinéfilo</a>

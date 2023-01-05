@@ -9,87 +9,62 @@ body{
     background: linear-gradient(#052E47, #02192c, #010F19);
     height: 100vh;
 }
-nav{
-    display: flex ;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100vh;
-    max-width: 7em;
-    position: fixed;
-    background-color: #00101D;
-    border-right: 0.1em solid #FFFFFF;
-    padding: 0.5em;
-}
-nav a{
-    text-align: center;
-    margin-top: 1em;
-}
-ul {
-    list-style-type: none;
+
+main{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 2em;
-    gap: 4em;
-}
-header img{
-    width: 3em ;
-}
-header img#moovie {
-    width: 3.6em ;
-}
-header img#logo {
-    width: 5em ;
 }
 h1{
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
-    margin-left: 24em;
+    margin-top: 2em;
 }
-
 article{
-    margin-top: 10em;
-    margin-left: 45em;
-    margin-bottom: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
 
     color: #FFFFFF;
     background-color: #315C77 ;
     text-align: center;
-    padding: 4.5em;
-    height: 30em;
-    width: 25em;
-}
-p{
-    margin-top: 1em;
-    margin-bottom: 2em;
-    font-family: 'Poppins';
+    padding: 1em;
+    height: 38em;
+    width: 30em;
 }
 h3{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1em;
-    margin-top: 1.5em;
+    margin-top: 0.4em;
 }
 input{
-    width: 18em;
+    width: 25em;
     height:3em;
     border: 0.1em solid #FFFFFF;
     background-color: #315C77;
 }
-.button{
-    color: #FFFFFF;
+.sinopse{
+    width: 25em;
+    height:8.8em;
+    border: 0.1em solid #FFFFFF;
+    background-color: #315C77;
+}
+
+main input.button 
+{
+    background: rgba(56, 56, 56, 0.15);
+    color: #ffffff;
     text-decoration: none;
-    font-family: 'Poppins';
-    font-size: 1em;
-    background-color: #383838;
-    border-radius: 0.8em;
-    border-bottom: 0.1em solid #FFFFFF;
-    border-right: 0.1em solid #FFFFFF;
-    
-    margin-bottom: 2em;
-    margin-top: 3em;
-    margin-left: 48em;
-    width: 19em;
-    padding: 1.3em;
+    font-family: "Abel";
+    font-size: 1.5em;
+    border: 0.1em solid #ffffff;
+    border-radius: 15px;
+    padding: 1em;
     display: block;
     text-align: center;
+    position: absolute;
+    margin-left: 0.5em;
+    width: 432px;
+    height: 73px;
+    margin-top: 19em;
 }
