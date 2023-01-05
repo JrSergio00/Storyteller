@@ -1,12 +1,17 @@
 <?php
 
-$pdo = new PDO("mysql:dbname=storyteller; host=localhost:3306, "root", "" ");
+$host = 'localhost:3306';
+$bd = 'storyteller';
+$usuario = 'admin';
+$senha = 'admin';
 
-$sql = $pdo->query('SELECT * FROM cinefilo');
+$pdo = new PDO("mysql:dbname=".$bd."; host=".$host, $usuario, $senha);
 
-$dados = sql->fetchAll(pdo::FETCH_ASSOC);
+//$pdo = new PDO("mysql:dbname=storyteller; host=localhost:3306, "root", "" ");
 
-echo '<pre>';
-print_r($dados);
+//$sql = $pdo->query('SELECT * FROM cinefilo');
+//$dados = sql->fetchAll(pdo::FETCH_ASSOC);
+//echo '<pre>';
+//print_r($dados);
 
 ?>
