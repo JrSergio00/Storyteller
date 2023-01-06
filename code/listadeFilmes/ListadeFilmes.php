@@ -42,24 +42,13 @@ if($sql->rowCount() > 0 ){
               <h2><?=$filme['nome'];?></h2>
               <p><?=$filme['sinopse'];?></p>
               <br>
-              <p><?=$filme['genero'];?></p>
-              <p><?=$filme['duracao'];?></p>
-              <p><?=$filme['dt_lancamento'];?></p>
+              <p>Gênero: <?=$filme['genero'];?></p>
+              <p>Duração: <?=$filme['duracao'];?></p>
+              <p>Indicado por: <?=$filme['dt_lancamento'];?></p>
             </div>
+
           <?php endforeach; ?>
 
-      <div>
-        <h2>O Homem do Norte</h2>
-        <p>O Príncipe Amleth está prestes a se tornar um homem
-        quando seu tio assassina seu pai e sequestra sua mãe. Duas
-        décadas depois, o jovem é agora um viking com a missão de 
-        salvar sua mãe, matar o tio e vingar seu pai.</p>
-        <br>
-        <p>Gênero: ação/aventura</p>
-        <p>Duração: 137 minutos</p>
-        <p>Data de lançamento: 12/05/2022</p>
-        <p>Indicado por: Jean-Claude Van Damme</p>
-      </div>
     </main>
   </body>
 </html>
