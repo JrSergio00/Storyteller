@@ -1,3 +1,13 @@
+<?php
+require '../config.php';
+
+$lista = [];
+$sql = $pdo->query("SELECT * FROM filme");
+if($sql->rowCount() > 0 ){
+  $lista = $sql->fetchALL(PDO::FETCH_ASSOC);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -26,33 +36,18 @@
     <main>
       <h1> Lista de filmes indicados</h1>
 
-      <div>
-        <h2>The Batman</h2>
-        <p> Após anos espreitando as ruas como Batman, Bruce
-        Wayne se encontra nas profundezas mais sombrias de 
-        Gotham City. Com poucos aliados confiáveis, o vigilante
-        solitário se estabelece como a personificação do vingança 
-        para a população</p>
-        <br>
-        <p>Gênero: ação/aventura</p>
-        <p>Duração: 176 minutos</p>
-        <p>Data de lançamento: 03/03/2022</p>
-        <p>Diretor: Matt Rives</p>
-        <p>Indicado por: Leo Santana</p>
-      </div>
+          <?php foreach($lista as $filme): ?>
 
-      <div>
-        <h2> A Mulher Rei</h2>
-        <p>Em 1800, o general Nanisca treina um grupo de mulheres 
-        guerreiras para proteger o reino africano de Dahomey
-        de um inimigo estrangeiro</p>
-        <br>
-        <p>Gênero: ação/drama</p>
-        <p>Duração: 134 minutos</p>
-        <p>Data de lançamento: 22/09/2022</p>
-        <p>Diretora: Gina Prince Bythewood</p>
-        <p>Indicado por: Freddy Mercury</p>
-      </div>
+            <div>
+              <h2><?=$filme['nome'];?></h2>
+              <p><?=$filme['sinopse'];?></p>
+              <br>
+              <p><?=$filme['genero'];?></p>
+              <p><?=$filme['duracao'];?></p>
+              <p><?=$filme['dt_lancamento'];?></p>
+            </div>
+          <?php endforeach; ?>
+
       <div>
         <h2>O Homem do Norte</h2>
         <p>O Príncipe Amleth está prestes a se tornar um homem
@@ -63,7 +58,6 @@
         <p>Gênero: ação/aventura</p>
         <p>Duração: 137 minutos</p>
         <p>Data de lançamento: 12/05/2022</p>
-        <p>Diretor: Robert Eggers</p>
         <p>Indicado por: Jean-Claude Van Damme</p>
       </div>
     </main>

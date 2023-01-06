@@ -24,8 +24,9 @@
 
     <main>
         <h1>Adicionar Filme</h1>
+
         <article>
-            <form method="POST" action="../php/cadastrarFILME.php""></form>
+            <form method="POST" action="../php/cadastrarFILME.php"></form>
                 <h3>Nome:</h3>
                 <input type="text" name="nome">
     
@@ -33,18 +34,19 @@
                 <input type="text" name="genero">
 
                 <h3>Duração em minutos:</h3>
-                <input type="text" name="duracao">
+                <input type="time" name="duracao">
 
                 <h3>Data de lançamento:</h3>
-                <input type="text" name="dt_lancamento">
+                <input type="date" name="dt_lancamento">
 
                 <h3>Email do cinéfilo:</h3>
-                <input type="text" name="email_cinefilo">
+                <input type="text" name="email">
 
                 <h3>Sinopse:</h3>
                 <input type="text" name="sinopse" class="sinopse">
 
                 <input type="submit" class="button" value="Adicionar Filme">
+
             </form>
         </article>
 

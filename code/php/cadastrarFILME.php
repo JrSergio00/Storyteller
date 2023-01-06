@@ -5,10 +5,10 @@ $nome = filter_input(INPUT_POST, 'nome');
 $genero = filter_input(INPUT_POST, 'genero');
 $duracao = filter_input(INPUT_POST, 'duracao');
 $dt_lancamento = filter_input(INPUT_POST, 'dt_lancamento');
-$email_cinefilo = filter_input(INPUT_POST, 'email_cinefilo');
+$email = filter_input(INPUT_POST, 'email');
 $sinopse = filter_input(INPUT_POST, 'sinopse');
 
-$sql = $pdo->prepare("INSERT INTO filme (nome, genero, duracao, dt_lancamento, sinopse, email_cinefilo) VALUES (:nome, :genero, :duracao, :dt_lancamento, :sinopse, :email_cinefilo)");
+$sql = $pdo->prepare("INSERT INTO filme (nome, genero, duracao, dt_lancamento, sinopse, email_cinefilo) VALUES (:nome, :genero, :duracao, :dt_lancamento, :sinopse, :email)");
 
 $sql->bindValue(':nome', $nome);
 $sql->bindValue(':genero', $genero);
