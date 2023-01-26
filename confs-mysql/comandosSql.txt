@@ -12,3 +12,26 @@ create table filme (
 	FOREIGN KEY (email_cinefilo)
 	REFERENCES cinefilo(email)
 	);
+
+---> Após inclusão do ID <---
+
+CREATE TABLE Cinefilo
+(
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(500) NOT NULL,
+  email VARCHAR(300) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE Filme
+(
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(500) NOT NULL,
+  genero VARCHAR(150) NOT NULL,
+  duracao TIME NOT NULL,
+  dt_lancamento DATE NOT NULL,
+  sinopse VARCHAR(2000) NOT NULL,
+  id_cinefilo INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (id_cinefilo) REFERENCES Cinefilo(id)
+);
