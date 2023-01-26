@@ -1,11 +1,11 @@
 <VirtualHost *:80>
 
-    ServerName storyteller.com
+    ServerName storyteller.com.br
 
     ServerAdmin junior.sergio@escolar.ifrn.edu.br
-    DocumentRoot /var/www/html/storyteller.com/
+    DocumentRoot /var/www/html/storyteller.com.br/
 
-    ErrorLog ${APACHE_LOG_DIR}/storyteller.com/error.log
-    CustomLog ${APACHE_LOG_DIR}/storyteller.com/access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/storyteller.com.br/error.log
+    CustomLog ${APACHE_LOG_DIR}/storyteller.com.br/access.log combined
 
 </VirtualHost>
