@@ -48,7 +48,7 @@ if($sql->rowCount() > 0 ){
         </ul>
       </div>
 
-            <div>
+      <div>
         <h2>Ações</h2>
         <ul class="listcinefilos">
           <?php foreach($lista as $usuario): ?>
@@ -56,6 +56,8 @@ if($sql->rowCount() > 0 ){
           <?php endforeach; ?>
         </ul>
       </div>
+
+      <a href="../adfilme/adfilme.html" class="button">Adicionar indicação</a>
 
     </article>
   </main>

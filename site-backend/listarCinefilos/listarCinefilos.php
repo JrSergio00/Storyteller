@@ -65,9 +65,7 @@ if($sql->rowCount() > 0 ){
     </article>
 
     <a href="../adcinefolo/adcinefolo.html" class="button">Adicionar cinéfilo</a>
-    <!-- <a href="../edcinefilo/edcinefilo.html" class="button">Editar cinéfilo</a> -->
     <a href="../adfilme/adfilme.html" class="button">Adicionar indicação</a>
-    <!-- <a href="../edfilme/edfilme.html" class="button">Editar filme</a> -->
 
   </main>
   
