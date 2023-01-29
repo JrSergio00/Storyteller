@@ -27,7 +27,7 @@ if($sql->rowCount() > 0 ){
               <li><a href="../index.html"><img src="../imagens/search.png"></a></li>
               <li><a href="../index.html"><img src="../imagens/home.png"></a></li>
               <li><a href="../listadeFilmes/ListadeFilmes.html"><img src="../imagens/movie.png" id="moovie"></a></li>
-              <li><a href="../listarCinefiloUSER/listarCinefilosUSER.php"><img src="../imagens/user 1.png"></a></li>
+              <li><a href="http://192.168.0.185/storyteller.backend.biz"><img src="../imagens/user 1.png"></a></li>
           </ul>
           <a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/admin.png" id="layout"></a>
       </nav>
@@ -44,7 +44,7 @@ if($sql->rowCount() > 0 ){
               <br>
               <p>Gênero: <?=$filme['genero'];?></p>
               <p>Duração: <?=$filme['duracao'];?></p>
-              <p>Indicado por: <?=$filme['dt_lancamento'];?></p>
+              <p>Indicado por: <?=$filme['id_cinefilo'];?></p>
             </div>
 
           <?php endforeach; ?>

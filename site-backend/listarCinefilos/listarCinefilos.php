@@ -22,14 +22,13 @@ if($sql->rowCount() > 0 ){
 <body>
   <header>
     <nav id="layout">
-        <a href="../index.html" class="logo"><img src="../imagens/logo (1).png" id="logo"></a>
+        <a href="http://192.168.0.185/storyteller.com" class="logo"><img src="../imagens/logo (1).png" id="logo"></a>
         <ul id="layout">
-            <li><a href="../index.html"><img src="../imagens/search.png"></a></li>
             <li><a href="../index.html"><img src="../imagens/home.png"></a></li>
-            <li><a href="../listadeFilmes/ListadeFilmes.html"><img src="../imagens/movie.png" id="moovie"></a></li>
-            <li><a href="../listarCinefiloUSER/listarCinefilosUSER.php"><img src="../imagens/user 1.png"></a></li>
+            <li><a href="../listarfilmesadmin/listarfilmesadmin.php"><img src="../imagens/movie.png" id="moovie"></a></li>
+            <li><a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/user 1.png"></a></li>
         </ul>
-        <a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/admin.png" id="layout"></a>
+        <a href="#"><img src="../imagens/search.png"></a>
     </nav>
   </header>
 

@@ -29,7 +29,7 @@ if($sql->rowCount() > 0 ){
           <li><a href="../listadeFilmes/ListadeFilmes.html"><img src="../imagens/movie.png" id="moovie"></a></li>
           <li><a href="../listarCinefiloUSER/listarCinefilosUSER.php"><img src="../imagens/user 1.png"></a></li>
       </ul>
-      <a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/admin.png" id="layout"></a>
+      <a href="http://192.168.0.185/storyteller.backend.biz"><img src="../imagens/admin.png" id="layout"></a>
   </nav>
 </header>
 
