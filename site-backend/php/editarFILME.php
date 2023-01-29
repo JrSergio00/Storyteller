@@ -1,11 +1,11 @@
 <?php
 require '../config.php';
 
-$id = filter_input(INPUT_GET, 'id_cinefilo');
+$id = filter_input(INPUT_GET, 'id');
 $filme= [];
 
 if($id){
-    $sql = $pdo->prepare("SELECT * FROM filme WHERE id_cinefilo = :id_cinefilo"); 
+    $sql = $pdo->prepare("SELECT * FROM filme WHERE id = :id"); 
     $sql->bindValue(':id', $id);
     $sql->execute();
 

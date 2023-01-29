@@ -28,18 +28,19 @@ require '../php/editarCINEFILO.php'
 
     <main>
         <h1>Editar dados de um Cinéfilo</h1>
+        <article>
+            <form method="POST" action="../php/editar_postCINEFILO.php">
+                <input type="hidden" name="id" value="<?=$cinefilo['id'];?>">
+                
+                <h3>Nome:</h3>
+                <input type="text" name="nome" value="<?=$cinefilo['nome'];?>"/>
 
-        <form method="POST" action="../php/editar_postCINEFILO.php">
-            <input type="hidden" name="id" value="<?=$cinefilo['id'];?>">
-            <p>Coloque aqui suas informações:</p>
-            <h3>Nome:</h3>
-            <input type="text" name="nome" value="<?=$cinefilo['nome'];?>"/>
+                <h3>Email:</h3>
+                <input type="text" name="email" value="<?=$cinefilo['email'];?>"/>
 
-            <h3>Email:</h3>
-            <input type="text" name="email" value="<?=$cinefilo['email'];?>"/>
-
-            <input type="submit" class="button" value="Editar Cinéfilo">
-        </form>
+                <input type="submit" class="button" value="Editar Cinéfilo">
+            </form>
+        </article>
 
     </main>
 </body>
