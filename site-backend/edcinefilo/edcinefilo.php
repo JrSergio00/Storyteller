@@ -19,8 +19,8 @@ require '../php/editarCINEFILO.php'
             <ul id="layout">
                 <li><a href="../index.html"><img src="../imagens/search.png"></a></li>
                 <li><a href="../index.html"><img src="../imagens/home.png"></a></li>
-                <li><a href="../listadeFilmes/ListadeFilmes.html"><img src="../imagens/movie.png" id="moovie"></a></li>
-                <li><a href="../listarCinefiloUSER/listarCinefilosUSER.php"><img src="../imagens/user 1.png"></a></li>
+                <li><a href="../listarfilmesadmin/listarfilmesadmin.php"><img src="../imagens/movie.png" id="moovie"></a></li>
+                <li><a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/user 1.png"></a></li>
             </ul>
             <a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/admin.png" id="layout"></a>
         </nav>
@@ -30,6 +30,7 @@ require '../php/editarCINEFILO.php'
         <h1>Editar dados de um Cinéfilo</h1>
         <article>
             <form method="POST" action="../php/editar_postCINEFILO.php">
+                
                 <input type="hidden" name="id" value="<?=$cinefilo['id'];?>">
                 
                 <h3>Nome:</h3>

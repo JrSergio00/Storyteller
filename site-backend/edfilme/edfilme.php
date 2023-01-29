@@ -31,8 +31,11 @@ require '../php/editarFILME.php'
     <h1>Editar dados de um Filme</h1>
         <article>
             <form method="POST" action="../php/editar_postFILME.php">
-                <input type="hidden" name="id_cinefilo" value="<?=$cinefilo['id'];?>">
-                <p>Insira as edições:</p>
+                
+                <input type="hidden" name="id" value="<?=$filme['id'];?>">
+
+                <input type="hidden" name="id_cinefilo" value="<?=$filme['id_cinefilo'];?>">
+
                 <h3>Nome:</h3>
                 <input type="text" name="nome" value="<?=$filme['nome'];?>"/>
 

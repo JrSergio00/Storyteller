@@ -10,7 +10,7 @@ if($id){
     $sql->execute();
 
     if($sql->rowCount() > 0) {
-        $cinefilo = $sql->fetch(PDO::FETCH_ASSOC);
+        $filme = $sql->fetch(PDO::FETCH_ASSOC);
 
     }else{
         header("Location: ../index.html");
