@@ -52,7 +52,7 @@ if($sql->rowCount() > 0 ){
         <h2>Ações</h2>
         <ul class="listcinefilos">
           <?php foreach($lista as $usuario): ?>
-            <li><a href="../php/editarCINEFILO.php?id=<?=$usuario['id'];?>">[editar]</a> <a href="../php/excluirCINEFILO.php?id=<?=$usuario['id'];?>">[excluir]</a></li>
+            <li><a href="../edfilme/edfilme.html?id=<?=$usuario['id'];?>">[editar]</a> <a href="../php/excluirCINEFILO.php?id=<?=$usuario['id'];?>">[excluir]</a></li>
           <?php endforeach; ?>
         </ul>
       </div>

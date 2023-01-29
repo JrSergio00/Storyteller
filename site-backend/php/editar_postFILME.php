@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require '../config.php';
 
 $id_cinefilo = filter_input(INPUT_POST, 'id');
 $nome = filter_input(INPUT_POST, 'nome');

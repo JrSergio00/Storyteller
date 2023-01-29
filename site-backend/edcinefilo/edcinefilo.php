@@ -1,3 +1,7 @@
+<?php
+require '../php/editarCINEFILO.php'
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,24 +24,24 @@
             </ul>
             <a href="../listarCinefilos/listarCinefilos.php"><img src="../imagens/admin.png" id="layout"></a>
         </nav>
-      </header>
+    </header>
 
     <main>
         <h1>Editar dados de um Cinéfilo</h1>
-        <article>
-            <form method="POST" action="../php/editar_postCINEFILO.php">
 
-                <input type="hidden" name="id" value="<?=$cinefilo['id'];?>">
-                <p>Coloque aqui suas informações:</p>
-                <h3>Nome:</h3>
-                <input type="text" name="nome" value="<?=$cinefilo['nome'];?>"/>
-    
-                <h3>Email:</h3>
-                <input type="text" name="email" value="<?=$cinefilo['email'];?>"/>
+        <form method="POST" action="../php/editar_postCINEFILO.php">
+            <input type="hidden" name="id" value="<?=$cinefilo['id'];?>">
+            
+            <p>Coloque aqui suas informações:</p>
+            
+            <h3>Nome:</h3>
+            <input type="text" name="nome">
 
-                <input type="submit" class="button" value="Editar Cinéfilo">
-            </form>
-        </article>
+            <h3>Email:</h3>
+            <input type="text" name="email">
+
+            <input type="submit" class="button" value="Editar Cinéfilo">
+        </form>
 
     </main>
 </body>
