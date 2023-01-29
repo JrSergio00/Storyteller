@@ -31,14 +31,12 @@ require '../php/editarCINEFILO.php'
 
         <form method="POST" action="../php/editar_postCINEFILO.php">
             <input type="hidden" name="id" value="<?=$cinefilo['id'];?>">
-            
             <p>Coloque aqui suas informações:</p>
-            
             <h3>Nome:</h3>
-            <input type="text" name="nome">
+            <input type="text" name="nome" value="<?=$cinefilo['nome'];?>"/>
 
             <h3>Email:</h3>
-            <input type="text" name="email">
+            <input type="text" name="email" value="<?=$cinefilo['email'];?>"/>
 
             <input type="submit" class="button" value="Editar Cinéfilo">
         </form>
