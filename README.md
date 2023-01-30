@@ -7,7 +7,11 @@ Projeto da matéria de Instalação e configuração de servidores do IFRN-CNAT.
 * [Diagrama Entidade Relacionamento](./docs/diagramaER.png)
 * [Modelo Relacional](./docs/modeloRelacional.png)
 * [Primeira entrega 30/12](https://www.youtube.com/watch?v=gDhJPP6JTYI)
-* [Slide final 31/12](https://docs.google.com/presentation/d/17rDdSX4QRJMhvCjEEe9cZJ9QS2DUhX2lbJWymxW6i7w/edit?usp=sharing)
+* [Slide final 31/01 (Google Slides)](https://docs.google.com/presentation/d/17rDdSX4QRJMhvCjEEe9cZJ9QS2DUhX2lbJWymxW6i7w/edit?usp=sharing)
+* [Slide final 31/01 (PDF)](./apresentacoes/31_01/Storyteller.pdf)
+* [Vídeo final](https://youtu.be/XUs5p5UavY4)
+
+
 
 ### Equipe:
 
