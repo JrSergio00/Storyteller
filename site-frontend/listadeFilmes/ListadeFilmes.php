@@ -44,6 +44,7 @@ if($sql->rowCount() > 0 ){
               <br>
               <p>Gênero: <?=$filme['genero'];?></p>
               <p>Duração: <?=$filme['duracao'];?></p>
+              <p>Data de lançamento: <?=$filme['dt_lancamento'];?></p>
               <p>Indicado por: <?=$filme['id_cinefilo'];?></p>
             </div>
 
