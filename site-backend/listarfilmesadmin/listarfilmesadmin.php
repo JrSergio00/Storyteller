@@ -56,9 +56,7 @@ if($sql->rowCount() > 0 ){
           <?php endforeach; ?>
         </ul>
       </div>
-
-      <a href="../adfilme/adfilme.html" class="button">Adicionar indicação</a>
-
     </article>
+    <a href="../adfilme/adfilme.html" class="button">Adicionar indicação</a>
   </main>
 </body>
